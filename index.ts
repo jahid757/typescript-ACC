@@ -19,4 +19,26 @@ const person: {name:string, age:number, married:boolean} = {
     name:'Jahid',
     age:18,
     married:false
-} 
+}
+
+type personType = {name:string,age:number}
+
+const person2: personType ={
+    name:'jahid',
+    age:18
+}
+
+interface Person  {
+    name:string;
+    age:number;
+    hobby?:string;
+}
+
+const student: Person = {
+    name:'Jahid',
+    age:18
+}
+
+//  Array
+
+const numbers:(number | string)[] = [12,2,3,4, 'Data']
